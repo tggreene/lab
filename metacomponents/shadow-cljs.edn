@@ -1,0 +1,9 @@
+{:deps true
+ :builds {:app {:target :browser
+                :asset-path "/js"
+                :modules {:main {:entries [metacomponents.main]}}
+                :dev {:output-dir "public/js"}
+                :devtools {:http-port 3050
+                           :http-root "public"}
+                :release {:output-dir "target/release/app/js"}
+                :compiler-options {:source-map true}}}}
